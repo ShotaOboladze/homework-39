@@ -1,0 +1,542 @@
+@font-face {
+    src: url(../fonts/Lato-Regular.ttf);
+    font-family: 'Lato-Regular';
+}
+
+@font-face {
+    src: url(../fonts/Lato-Bold.ttf);
+    font-family: 'Lato-Bold';
+}
+
+@font-face {
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+    font-family: 'PlayfairDisplay-Regular';
+}
+
+@font-face {
+    src: url(../fonts/PlayfairDisplay-Medium.ttf);
+    font-family: 'PlayfairDisplay-Medium';
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato-Regular';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF;
+}
+
+svg {
+    cursor: pointer;
+}
+
+/* Support Classes */
+.abs {
+    position: absolute;
+}
+
+.rel {
+    position: relative;
+}
+.fix {
+    position: fixed;
+}
+
+.flex-cen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+}
+/* End Support Classes */
+
+/* Main-Section */
+.main-section {
+    width: 1440px;
+    height: 1024px;
+}
+/* Baner */
+.baner {
+    width: 100%;
+    height: 40px;
+    top: 0;
+    background-color: #8B4513;
+    display: flex;
+    justify-content: center;
+    align-items: center 
+}
+.baner span {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.baner a {
+    position: absolute;
+    top: 9px;
+    right: 16px;
+}
+/* Main-Header */
+.main-header {
+    width: 1345px;
+    top: 64px;
+    left: 42px;
+}
+.main-header h1 {
+    color: #FFF;
+    font-family: 'PlayfairDisplay-Medium';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.main-header h1::first-letter {
+    color: #8B4513;
+}
+/* Main-Header-Center-Navigation */
+.main-header nav {
+    padding-left: 12px;
+}
+.main-header a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 20px;
+}
+.main-header>nav>.svg-arrow {
+    margin-left: 8px;
+}
+/* Main-Header-right-Navigation */
+.main-header input {
+    width: 214px;
+    height: 33px;
+    border: 0px solid #FFF;
+    padding-left: 32px;
+    color: #B6B6B6;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: none;
+}
+.right-navigation>form>.svg-search {
+    top: 22px;
+    right: 252px;
+}
+/* Main-text */
+.main-text {
+    width: 870px;
+    top: 318px;
+    left: 42px;
+}
+.main-text h3 {
+    color: #FFF;
+    align-self: stretch;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.main-text h1 {
+    color: #FFF;
+    font-family: 'PlayfairDisplay-Medium';
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+/* Main-Cards */
+.main-cards {
+    top: 554px;
+    left: 956px;
+}
+.main-cards>.card {
+    background-color: #FFF;
+    width: 442px;
+    margin-bottom: 23px;
+}
+.main-cards>.card>.second-part1, .main-cards>.card>.second-part2  {
+    width: 210px;
+}
+.main-cards>.card>.second-part1 {
+    padding: 16px 16px 16px 0px;
+}
+.main-cards>.card>.second-part2 {
+    padding: 16px 0px 16px 16px;
+}
+.main-cards h2 {
+    color: #3E3E3E;
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+.main-cards p {
+    color: #757575;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -20px;
+}
+.main-cards a {
+    color: #3E3E3E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+/* Main-Footer */
+.main-footer {
+    top: 955px;
+    left: 638px;
+}
+.main-footer a {
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-right: 8px;
+}
+/* End Main-Section */
+
+/* Section-I */
+.section-I {
+    width: 1440px;
+    padding: 64px 42px 32px 42px;
+    gap: 32px;
+}
+.section-I>.first-part {
+    gap: 32px;
+}
+.section-I .h1-1, .section-I .h1-2   {
+    color: #FFF;
+    font-family: 'PlayfairDisplay-Medium';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+.section-I .h1-1 {
+    top: 156px;
+    left: 30px;
+}
+.section-I .h1-2 {
+    right: 267px;
+    top: 359px;
+}
+/* End Section-I */
+
+/* Section-II AND Section-III  */
+.section-II {
+    width: 1440px;
+    padding: 32px 64px 32px 64px;
+    gap: 32px;
+}
+.section-II h1 {
+    color: #3E3E3E;
+    font-family: 'PlayfairDisplay-Medium';
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.section-II .box {
+    width: 68px;
+    height: 27px;
+    background-color: #8B4513;
+    padding: 4px 8px 4px 8px;
+    border-radius: 100px;
+    gap: 4px;
+    right: 8px;
+    top: 12px;
+}
+.cards>.img {
+    gap: 16px;
+}
+.img>.box>p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.section-II h5 {
+    color: #757575;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.section-II h3 {
+    color: #3E3E3E;
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: capitalize;
+    margin-top: -12px;
+} 
+.section-II h4 {
+    color: #757575;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.section-II button {
+    width: 215px;
+    height: 77px;
+    padding: 24px;
+    gap: 8px;
+    background-color: #8B4513;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    border: none; 
+}
+/* End Section-II AND Section-III */
+
+/* Section-IV */
+.section-IV {
+    width: 1440px;
+    padding: 32px 42px 32px 42px;
+    gap: 32px;
+}
+.section-IV>.left-box, .section-IV>.center-boxes>.center-box, .section-IV>.right-box  {
+    padding: 24px;
+    border: 24px solid #F2F2F2;
+    align-items: center;
+    gap: 16px;
+    justify-content: flex-start !important;
+}
+.section-IV>.left-box, .section-IV>.right-box {
+    width: 336.5px;
+    height: 392px;
+}
+.section-IV>.center-boxes>.center-box {
+    width: 619px;
+    height: 180px;
+}
+.svg-box {
+width: 64px;
+height: 64px;
+padding: 20px;
+border: none;
+border-radius: 32px;
+background-color: #8B4513;
+}
+.section-IV h1 {
+    color: #3E3E3E;
+    text-align: center;
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+.section-IV p {
+    color: #757575;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+}
+.box-text-a {
+    gap: 8px;
+}
+.box-text-b {
+    height: 72px;
+    gap: 16px;
+    align-self: center !important;
+}
+.box-text-b>h1 {
+    text-align: left;
+}
+/* End Section-IV */
+
+/* End Section-V */
+.section-V {
+    width: 1440px;
+    padding: 32px 42px 32px 42px;
+}
+.section-V svg {
+    top: 374px;
+    left: 672px;
+}
+/* End Section-V */
+
+/* Footer-Section */
+.footer-section {
+    width: 1440px;
+    height: 519px;
+    margin-top: 216px;
+    background-color: #8B4513;
+}
+/* Moving-Sector */
+.moving-sector {
+    width: 1357px;
+    height: 352px;
+    top: -176px;
+    left: calc(50% - 1357px/2);
+    padding: 96px 0px;
+    background-color: #F2F2F2;
+}
+.moving-sector>.moving-cards {
+    max-width: 1600px;
+    overflow-x: scroll;
+}
+.moving-cards>.card {
+    width: 400px;
+    height: 160px;
+    padding: 16px;
+    gap: 20px;
+    background-color: #FFF;
+}
+.card>.head {
+    gap: 8px;
+}
+.circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background: #4D0E0E;
+}
+.name {
+    width: 244px;
+    height: 36px;
+}
+.name>h3 {
+    color: #3E3E3E;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.name>p {
+    color: #757575;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.review {
+    margin-left: -20px;
+}
+.card-footer>p {
+    color: #757575;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%
+}
+/* Last-Sector */
+.last-sector {
+    width: 1357px;
+    top: 232px;
+    left: calc(50% - 1357px/2);
+    gap: 36px;
+}
+.last-sector>.footer-tables {
+    gap: 96px;
+}
+.footer-tables>.left-table {
+    width: 290px;
+}
+.footer-tables>.right-table {
+    width: 970px;
+    gap: 42px;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+}
+.last-sector h1 {
+    color: #FFF;
+    font-family: 'PlayfairDisplay-Medium';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+.last-sector p {
+    color: #FFF;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 135%;
+}
+.last-sector table, a {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    text-decoration: none;
+}
+td {
+    padding: 4px;
+}
+th {
+    padding: 4px 4px 10px 4px;
+    text-align: left;
+    font-size: 14px;
+    text-shadow: none;
+}
+table tr:hover {
+    background-color:  coral;
+}
+.left-table .td-a {
+    width: 67px;
+}
+.left-table .td-b  {
+    width: 223px;
+}
+.td-c {
+    bottom: 16px;
+}
+.td-d {
+    width: 173px;
+}
+/* End Footer-Section */
